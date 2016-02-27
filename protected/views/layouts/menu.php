@@ -13,9 +13,11 @@
 				<span class="icon-bar"></span>
 			</button>
 			<a class="navbar-brand text-center" href="<?php echo Yii::app()->baseUrl.'/index.php'; ?>">
-				<img src='<?php echo Yii::app()->baseUrl.'/assets/images/icones/Elias Transparente Logo.png'; ?>' class='esconder-celular' />
+				<!-- img src='<?php echo Yii::app()->baseUrl.'/assets/images/icones/Elias Transparente Logo.png'; ?>' class='esconder-celular' /> -->
 				<p><?php echo $config->nomesite; ?></p>
+				<?php if(isset($config->exibircreci) && $config->exibircreci == "true"){ ?>
 				<h5 class='text-right esconder-celular'>CRECI-F <?php echo $config->creci; ?></h5>
+				<?php }?>
 				
 			</a>
 		</div>

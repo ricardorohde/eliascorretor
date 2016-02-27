@@ -1,5 +1,5 @@
 var isIndex = function(){
-    var urlI = window.location.protocol+'//'+window.location.host + '/eliascorretor';
+    var urlI = window.location.protocol+'//'+window.location.host;
     var url = document.URL.replace(urlI,'');
     if(url == '/' || url == '/index.php' || url == '' || url == '/index.php/' || url == '/index.php/deslogarUsuario' || url == 'index.php/deslogarUsuario'){
         return true;

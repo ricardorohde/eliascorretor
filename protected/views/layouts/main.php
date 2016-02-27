@@ -60,11 +60,23 @@
 					<p><b>jonasfrancokreling@gmail.com</b></p>		
 				</div>
 				<div class='col-sm-4 conte-inicial esconder-celular text-right'>
-					<span class="glyphicon glyphicon-flag" aria-hidden="true"></span>&nbsp;&nbsp;Creci-F <?php echo $config->creci;?><br />
+					<?php if(isset($config->exibircreci) && $config->exibircreci == "true"){ ?>
+					<span class="glyphicon glyphicon-flag" aria-hidden="true"></span>&nbsp;&nbsp;
+						Creci-F <?php echo $config->creci;?>
+					<br />
+					<?php }?>
+					<?php if(isset($config->celular1) && $config->celular1 != ""){ ?>
 					<span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>&nbsp;&nbsp;<?php echo preg_replace($pattern, $replacement, $config->celular1); ?><br />
+					<?php }?>
+					<?php if(isset($config->celular2) && $config->celular2 != ""){ ?>
 					<span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>&nbsp;&nbsp;<?php echo preg_replace($pattern, $replacement, $config->celular2); ?><br />
+					<?php }?>
+					<?php if(isset($config->celular3) && $config->celular3 != ""){ ?>
 					<span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>&nbsp;&nbsp;<?php echo preg_replace($pattern, $replacement, $config->celular3); ?><br />
+					<?php }?>
+					<?php if(isset($config->celular4) && $config->celular4 != ""){ ?>
 					<span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>&nbsp;&nbsp;<?php echo preg_replace($pattern, $replacement, $config->celular4); ?><br />
+					<?php }?>
 					<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>&nbsp;&nbsp;<?php echo $config->endereco;?><br />
 					<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>&nbsp;&nbsp;<?php echo $config->email;?><br />
 				</div>

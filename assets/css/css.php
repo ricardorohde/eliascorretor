@@ -420,7 +420,7 @@ h5.titulo-inicial {
 	font-family: 'Open Sans','Droid Sans',Arial;
 	font-size: 18px;
 	color: #fff;
-	text-shadow: 1px -1px 7px #000;
+	text-shadow: 1px -1px 15px #000;
 	margin: 0;
 	text-align: center;
 	margin: 10px auto;
