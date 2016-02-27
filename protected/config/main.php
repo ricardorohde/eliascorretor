@@ -18,8 +18,8 @@ return array(
 		'db' => array(
             'class'=>'CDbConnection',
             'connectionString'=>'mysql:host=127.0.0.1;dbname=imobil',
-            'username'=>'jonaskreling',
-            'password'=>'',
+            'username'=>'root',
+            'password'=>'coraldavilma',
             'charset'=>'utf8',
         ),
 		'urlManager' => array(
